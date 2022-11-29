@@ -7,7 +7,7 @@ import Product3 from "./pages/Product-3/Product-3";
 import Home from "./pages/Home/Home";
 import Nav from "./components/Nav/Nav";
 import ProductPage from "./pages/ProductPage/ProductPage";
-import Account from "./pages/account/account";
+import ProfilePage from "./pages/ProfilePage/ProfilePage";
 import { useState } from "react";
 import NotFound from "./pages/NotFound/NotFound";
 
@@ -24,7 +24,7 @@ function App() {
                 {/*<Route path="/product-2" element={ <Product2/> }/>*/}
                 {/*<Route path="/product-3" element={ <Product3/> }/>*/}
                 <Route path="/product-page/:id" element={ <ProductPage/> }/>
-                <Route path="/account" element={ auth ? <Account/> : <Navigate to="/"/> }/>
+                <Route path="/profile-page" element={ auth ? <ProfilePage/> : <Navigate to="/"/> }/>
                 <Route path="*" element={ <NotFound/> }/>
             </Routes>
         </>

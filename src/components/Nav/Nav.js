@@ -6,7 +6,7 @@ const Nav = ( { auth, setAuth } ) => {
 
     /*function handleLogin (  ) {
         setAuth( true )
-        navigate("/account")
+        navigate("/ProfilePage")
     }*/
 
     return (
@@ -20,7 +20,7 @@ const Nav = ( { auth, setAuth } ) => {
                     {/*<li><NavLink to="/product-3" className={ ( { isActive } ) => isActive ? "active--link" : "default--link" }>Product 3</NavLink></li>*/ }
                     <li><NavLink to="/product-page/4" className={ ( { isActive } ) => isActive ? "active--link" : "default--link" }>Product 4</NavLink></li>
                     <li><NavLink to="/product-page/5" className={ ( { isActive } ) => isActive ? "active--link" : "default--link" }>Product 5</NavLink></li>
-                    { auth && <li><NavLink to="/account" className={ ( { isActive } ) => isActive ? "active--link" : "default--link" }>Account</NavLink></li> }
+                    { auth && <li><NavLink to="/profile-page" className={ ( { isActive } ) => isActive ? "active--link" : "default--link" }>Profile</NavLink></li> }
                 </ul>
                 <ul>
                     <li>
